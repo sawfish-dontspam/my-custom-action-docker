@@ -12,6 +12,6 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Exécuter l'action Docker
-      uses: ./docker-action/ # Utilise l'action locale
+      uses: ./ # Utilise l'action locale
       with:
         message: "Hello this is action from docker"
