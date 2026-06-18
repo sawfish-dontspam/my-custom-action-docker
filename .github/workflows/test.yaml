@@ -5,13 +5,13 @@ on:
       - main
 
 jobs:
-  greet-user-with-docker:
+  greet-user-with-docker  :
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
     - name: Exécuter l'action Docker
-      uses: ./ # Utilise l'action locale
+      uses: ./docker-action/ # Utilise l'action locale
       with:
         message: "Hello this is action from docker"
