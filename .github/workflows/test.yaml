@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  greet-user:
+  greet-user-with-docker:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
